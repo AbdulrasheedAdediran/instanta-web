@@ -1,4 +1,7 @@
-import { LayoutFooter } from "./LayoutFooter";
-import { LayoutHeader, Logo, Menu } from "./LayoutHeader";
+import { default as DashboardFooter } from "./dashboard-footer/DashboardFooter";
+import { default as DashboardHeader } from "./dashboard-header/DashboardHeader";
+import { default as DashboardSidebar } from "./dashboard-sidebar/DashboardSidebar";
+import { default as Button } from "./buttons/Button";
+import { default as MenuButton } from "./buttons/MenuButton";
 
-export { LayoutHeader, Logo, Menu, LayoutFooter };
+export { DashboardFooter, DashboardHeader, DashboardSidebar, Button, MenuButton};

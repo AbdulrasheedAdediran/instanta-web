@@ -1,3 +1,3 @@
-import Layout from "./ui/Layout";
+import DashboardLayout from "./ui/DashboardLayout";
 
-export { Layout };
+export { DashboardLayout };

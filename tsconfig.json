@@ -29,6 +29,9 @@
       "features/*": ["src/features/*"],
       "widgets/*": ["src/widgets/*"],
       "pages/*": ["src/pages/*"],
+      "contexts/*": ["src/contexts/*"],
+      "hooks/*": ["src/hooks/*"],
+      "utils/*": ["src/utils/*"],
       "processes/*": ["src/processes/*"],
       "app/*": ["src/app/*"]
     }

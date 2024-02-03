@@ -4,7 +4,7 @@ const Home: FC = () => {
   return (
     <>
       <section>
-        <div className="hero min-h-[calc(100vh-64px)] bg-base-200">
+        <div className="hero min-h-[calc(100vh-8rem)] bg-base-200">
           <div className="hero-content flex-col lg:flex-row">
             <img
               src="/images/hero.webp"
