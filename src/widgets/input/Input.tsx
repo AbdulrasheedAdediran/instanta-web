@@ -33,7 +33,7 @@ export default function Input({
   } ${leftIcon && "left-0 "}`;
 
   const baseContainerClassName =
-    "transitions relative flex items-center justify-between w-full border-[.5px] border-solid group focus-within:border-chineseSilver active:border-chineseSilver border-chineseSilver rounded-md hover:border-chineseSilver";
+    "transitions relative flex items-center justify-between w-full border-[.5px] border-solid group focus-within:border-chineseSilver active:border-chineseSilver border-chineseSilver hover:border-chineseSilver";
 
   if (rightIcon) {
     return (
@@ -89,7 +89,7 @@ export default function Input({
     <input
       {...rest}
       name={name}
-      className={`${baseClassName} border-[.5px] border-solid border-chineseSilver hover:border-chineseSilver focus:border-chineseSilver active:border-chineseSilver rounded-md ${className}`}
+      className={`${baseClassName} border-[.5px] border-solid border-chineseSilver hover:border-chineseSilver focus:border-chineseSilver active:border-chineseSilver  ${className}`}
     />
   );
 }

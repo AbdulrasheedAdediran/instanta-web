@@ -31,7 +31,7 @@ export default function DashboardHeader() {
         />
         <div className="flex items-center justify-end w-full ">
     
-          <div className="relative flex items-center justify-center gap-x-4">
+          <div className="relative flex items-center justify-center gap-x-4 ">
       
             <div className="text-right text-xs hidden md:block ml-4">
               <p className="font-bold text-white">
@@ -40,7 +40,7 @@ export default function DashboardHeader() {
            
             </div>
 
-            <div className="relative">
+            <div className="relative z-50 ">
               <div
                 onClick={toggleDropdown}
                 className="flex items-center gap-x-2"
@@ -83,7 +83,7 @@ const Dropdown = forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <div
       ref={ref}
-      className="flex flex-col items-start text-grey bg-white  border-[.5px] border-deepKaomaru p-2 rounded-lg w-[12.5rem] gap-y-2 top-[3.5rem] right-0 absolute max-z-index text-left"
+      className="flex flex-col items-start text-grey bg-white  border-[.5px] border-deepKaomaru p-2 rounded-lg w-[12.5rem] gap-y-2 top-[2.5rem] right-0 absolute z-20 text-left"
     >
 
       <div className="w-full">

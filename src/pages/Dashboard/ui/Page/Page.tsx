@@ -1,7 +1,7 @@
 
 const Dashboard = () => {
   return (
-      <section className=" relative w-full">
+      <section className=" relative w-full z-0">
           <div className="space-y-1 min-h-[7.5rem] bg-lapisLazuli page-padding"><h1 className='h-bold text-2xl'>Summary</h1>
               <p>(Excluding Canceled)</p>
           
@@ -9,7 +9,7 @@ const Dashboard = () => {
           <div className='grid lg:grid-cols-4 gap-y-4 gap-x-8 absolute top-[70%] w-full  page-padding'>
               {cards.map(card => (
                   <div className="grid gap-1 rounded-md p-2" style={{backgroundColor: card.color}}>
-                      <p className="">{ card.title}</p>
+                      <p className="text-sm">{ card.title}</p>
                       <p className="text-xl">{ card.value}</p>
                   </div>
               )) }

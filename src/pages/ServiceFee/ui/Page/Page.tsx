@@ -1,16 +1,15 @@
 import { ButtonVariants, Sizes } from '@/utils'
 import { Button, Input, Select } from '@/widgets'
-import React from 'react'
 import { MdOutlineModeEditOutline } from 'react-icons/md'
 import { TbTrash } from 'react-icons/tb'
 
 const ServiceFee = () => {
     return (
-        <section className=" relative w-full">
-            <div className="space-y-1 min-h-[3.5rem] bg-lapisLazuli page-padding">
+        <section className=" relative w-full z-0">
+            <div className="space-y-1 min-h-[3.5rem] bg-lapisLazuli page-padding flex items-center">
                 <h1 className='text-2xl'>Fee</h1>
             </div>
-            <div className='space-y-6 relative top-[70%] w-full z-10 page-padding bg-white min-h-[7.5rem] shadow-md text-grey '>
+            <div className='space-y-6 relative top-[70%] w-full z-10 page-padding bg-white min-h-[7.5rem] shadow-md text-grey pt-4'>
                 <h1 className=' text-xl text-coolBlack'>Customer Payment Fee</h1>
 
                 <table className='w-full text-left text-sm  border-spacing-4'>
@@ -35,27 +34,26 @@ const ServiceFee = () => {
                 </table>
             </div>
 
-            <div className='space-y-6 relative w-full  p-4 bg-white min-h-[12.5rem] shadow-md text-grey'>
+            <div className='space-y-6 relative w-full  p-4 bg-white min-h-[12.5rem] shadow-md text-grey overflow-x-hidden pb-8 pt-4'>
                 <h1 className=' text-xl text-coolBlack'>Beneficiary Payment Fee</h1>
-
+<div className="overflow-x-auto">
+    
                 <table className='w-full text-left text-sm space-4  border-spacing-4'>
                     <thead>
                         <tr>
-                            {/* {beneficiaryTableHeaders.map((header, index) => (
-
-                                <th key={index} className='w-[10%]'>
-                                    {header}
-                                </th>
-                        ))} */}
+                            {/* {beneficiaryTableHeaders.map(header => (
+                                
+                            <th className="cr">{header}</th>
+                            ))} */}
                             <th className="w-[10%]">Country</th>
                             <th className="w-[15%]">Payout</th>
                             <th className="w-[15%]">Start Level Amount</th>
                             <th className="w-[15%]">End Level Amount</th>
-                            <th className="w-[5%]">Fee</th>
+                            <th className="w-[10%]">Fee</th>
                             <th className="w-[10%]">Fee Currency</th>
                             <th className="w-[10%]">Status</th>
-                            <th className="w-[10%]">Edit</th>
-                            <th className="w-[10%]">Delete</th>
+                            <th className="w-[7.5%]">Edit</th>
+                            <th className="w-[7.5%]">Delete</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -72,17 +70,17 @@ const ServiceFee = () => {
                                 <td>{data.feeCurrency}</td>
                                 <td>{data.status}</td>
                                 <td className="text-red" colSpan={1}>
-                                    <div className="flex items-center gap-x-1">
+                                    <Button applyBaseClassName={false} className="flex items-center gap-x-1" >
 
                                     <MdOutlineModeEditOutline />
                                     {data.edit}
-                                    </div>
+                                    </Button>
                                 </td>
                                 <td className="text-red" colSpan={1}>
-                                    <div className="flex items-center gap-x-1">
+                                    <Button  applyBaseClassName={false} className="flex items-center gap-x-1">
                                     <TbTrash />
                                     {data.delete}
-                                    </div>
+                                    </Button>
                                 </td>
                             </tr>
                         ))}
@@ -120,7 +118,7 @@ const ServiceFee = () => {
                                 </Select>
                             </td>
 
-                            <td>
+                            <td colSpan={2}>
                                 <Button
                                     variant={ButtonVariants.FILLED_RED}
                                     size={Sizes.SM}
@@ -133,6 +131,7 @@ const ServiceFee = () => {
                         </tr>
                     </tbody>
                 </table>
+</div>
             </div>
         </section>
     )

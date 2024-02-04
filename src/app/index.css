@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: 'Avenir Light'; 
+  src: url('../../public/fonts/Avenir-LT-Std/Avenir-LT-Std-35-Light/Avenir\ LT\ Std\ 35\ Light.otf') format('woff'); 
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Medium'; 
+  src: url('../../public/fonts/Avenir-LT-Std/Avenir\ LT\ Std\ 65\ Medium/Avenir\ LT\ Std\ 35\ Medium.otf') format('woff'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --toastify-z-index: 9999;
   --white: #ffffff;
@@ -47,7 +61,8 @@ body {
   width: 100%;
   background-color: var(--white);
   min-height: 100vh;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-family: 'Avenir Light', sans-serif;
   font-weight: 400;
   color: var(--text-color);
   scroll-behavior: smooth;
@@ -119,8 +134,10 @@ input:-webkit-autofill {
 
 
 th, td {
-  padding: 4px;
+  padding-block: 4px;
+  padding-inline: 8px;
   margin: 8px;
+  white-space: nowrap;
 }
 }
 

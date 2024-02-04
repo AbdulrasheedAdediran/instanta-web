@@ -1,12 +1,13 @@
 import { FC } from "react";
 import { Route, Routes } from "react-router-dom";
 import { DashboardLayout } from "@/app/Layout";
-import { Home, NoMatch ,Dashboard,ServiceFee,CurrencyRates,Limits} from "@/pages";
+import { Home, NoMatch ,Dashboard,ServiceFee,CurrencyRates,Limits,Login} from "@/pages";
 
 const App: FC = () => {
   return (
     <>
       <Routes>
+          <Route path='/login' element={<Login />} />
         <Route path="/" element={<DashboardLayout />}>
           <Route index element={<Dashboard />} />
           <Route path='/dashboard' element={<Dashboard />} />
