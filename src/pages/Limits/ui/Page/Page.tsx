@@ -1,5 +1,4 @@
-import { ButtonVariants, Sizes } from '@/utils'
-import { Button, Input, Select } from '@/widgets'
+import { Button } from '@/widgets'
 import { MdOutlineModeEditOutline } from 'react-icons/md'
 import { TbTrash } from 'react-icons/tb'
 
