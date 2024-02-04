@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const NoMatch: FC = () => {
   return (
     <section>
-      <div className="flex min-h-screen w-screen flex-col items-center justify-center gap-y-5">
+      <div className="flex min-h-[calc(100vh-12rem)] w-full flex-col items-center justify-center gap-y-5">
         <h1 className="bg-gradient-to-l from-primary-content via-secondary to-primary bg-clip-text text-9xl font-bold text-transparent">
           404
         </h1>

@@ -79,6 +79,50 @@ input:-webkit-autofill {
   caret-color: var(--white);
 }
 
+@layer components {
+  .blurred-overlay {
+    @apply fixed inset-0 z-[900];
+    background: rgba(35, 35, 35, 0.85);
+  }
+  .glass {
+    background: rgba(35, 35, 35, 0.85);
+  }
+  @supports (backdrop-filter: blur(10px)) {
+    .blurred-overlay,
+    .glass {
+      backdrop-filter: blur(10px);
+    }
+  }
+
+  .dark-overlay {
+    @apply fixed inset-0 bg-[rgba(15,15,15,0.75)] z-[900];
+  }
+
+    .max-z-index {
+    @apply z-[1000];
+  }
+
+  .max-width {
+    @apply w-full max-w-[1536px] mx-auto;
+  }
+
+
+    .transitions {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+    .page-padding {
+    /* @apply px-[2vw]; */
+
+    padding-inline: clamp(0.75rem,1.5vw,2rem);
+  }
+
+
+th, td {
+  padding: 4px;
+  margin: 8px;
+}
+}
 
 .cr {
   border: 1px solid #10346340;

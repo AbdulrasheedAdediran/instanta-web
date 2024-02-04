@@ -90,7 +90,7 @@ console.log({location})
 
             {title}
             </span>
-            {subMenuList && <span>{icon}</span>}
+            {subMenuList && <span className={`transition-all duration-300 ease-in-out ${openSubmenu ===  id ? 'rotate-90':''}`}>{icon}</span>}
           </Button>
     <ul className={`bg-lapisLazuli transition-all duration-300 ease-in-out overflow-hidden ${subMenuList &&   openSubmenu ===  id ? 'h-full':'h-0'}`}>
               {subMenuList?.map(subMenu => (

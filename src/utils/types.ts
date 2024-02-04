@@ -1,6 +1,7 @@
 export enum ButtonVariants {
   FILLED_BLUE = "filled_blue",
   FILLED_RED = "filled_red",
+  FILLED_PUMPKIN = "filled_pumpkin",
   FILLED_WHITE = "filled_white",
   OUTLINE_BLUE = "outline_blue",
   OUTLINE_WHITE = "outline_white",

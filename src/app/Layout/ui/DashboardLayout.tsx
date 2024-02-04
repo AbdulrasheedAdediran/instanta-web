@@ -40,7 +40,7 @@ export default function DashboardLayout() {
           <div className="flex flex-col overflow-y-auto h-screen">
             <DashboardHeader />
             <main className="flex-1 max-width pb-8">  <Outlet/></main>
-        <DashboardFooter className="px-4" />
+        <DashboardFooter className="px-4 flex-shrink-0" />
           </div>
         </div>
       </DashboardContextProvider>

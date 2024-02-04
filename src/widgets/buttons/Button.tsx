@@ -16,7 +16,7 @@ export default function Button({
   ...rest
 }: IButton) {
   const baseClassName = applyBaseClassName
-    ? `rounded-md capitalize transition-all duration-300 ease-in-out  ${
+    ? ` capitalize transition-all duration-300 ease-in-out  ${
         disabled ? "cursor-not-allowed" : ""
       }`
     : "";
@@ -32,6 +32,11 @@ export default function Button({
       variantClassName = `border-[.5px] border-white bg-white ${
         isActive ? "hover:bg-white" : "hover:bg-white/[0.75]"
       } text-black`;
+      break;
+    case ButtonVariants.FILLED_PUMPKIN:
+      variantClassName = `border-[.5px] border-pumpkin bg-pumpkin ${
+        isActive ? "hover:bg-pumpkin/80" : "hover:bg-pumpkin/[0.75]"
+      } text-white`;
       break;
     case ButtonVariants.FILLED_RED:
       variantClassName = `border-[.5px] border-red bg-red ${
