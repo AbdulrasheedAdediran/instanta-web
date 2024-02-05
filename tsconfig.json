@@ -34,7 +34,7 @@
 			"utils/*": ["src/utils/*"],
 			"processes/*": ["src/processes/*"],
 			"app/*": ["src/app/*"],
-			"sdk/*": ["sdk/*"]
+			"sdk/*": ["src/sdk/*"]
 		}
 	},
 	"include": ["src", "types/vite-env.d.ts"],

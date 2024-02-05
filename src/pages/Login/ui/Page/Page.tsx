@@ -2,7 +2,7 @@ import { ButtonVariants, Sizes } from '@/utils'
 import { Button, Input } from '@/widgets'
 import { FaLock, FaUser } from 'react-icons/fa6'
 import { PiCaretLeftBold } from 'react-icons/pi'
-import { apiConfig } from 'sdk'
+import { apiConfig } from '@/sdk'
 const Login = () => {
 	apiConfig.AdminService.postApiAdminAuthenticate({ email: 'admin', password: '' })
 
