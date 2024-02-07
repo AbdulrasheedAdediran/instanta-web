@@ -9,7 +9,7 @@
 		"lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview",
 		"format": "prettier --write .",
-		"sdk-gen": "npx swagger-typescript-api --client axios -i ./sdk/openapi.json -o ./sdk/generated --indent 2 --useUnionTypes"
+		"sdk-gen": "npx openapi-typescript-codegen --client axios -i ./src/sdk/openapi.json -o ./src/sdk/generated --indent 2 --useUnionTypes"
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.9.5",
@@ -18,7 +18,8 @@
 		"react-dom": "^18.2.0",
 		"react-icons": "^5.0.1",
 		"react-toastify": "^10.0.4",
-		"redux": "^4.2.1"
+		"redux": "^4.2.1",
+		"swr": "^2.2.4"
 	},
 	"devDependencies": {
 		"@types/react": "^18.0.37",
